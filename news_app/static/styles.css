@@ -1,4 +1,4 @@
-/* styles.css - Updated for Django */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,12 +6,6 @@ body {
     background-color: #F5F5F5;
     color: #333;
     overflow-x: hidden;
-}
-
-body.home-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .hamburger{
@@ -43,7 +37,7 @@ body.home-page {
 
 button:focus,
 .mobile-menu a:focus {
-    outline: 2px solid #FFD700; /* Yellow focus outline */
+    outline: 2px solid #FFD700; 
 }
 
 .mobile-menu a {
@@ -102,15 +96,14 @@ button:focus,
 }
 
 .news-grid {
-    /*display: grid;*/
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    width: 100vw;
+    gap: 20px;
     padding: 20px;
 }
 
 .news-grid article {
     background: white;
-    min-height: 300px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -125,14 +118,10 @@ button:focus,
 }
 
 footer {
-    margin-top: auto;
     background: #0C234B;
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
 
 @media (max-width: 768px) {
